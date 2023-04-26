@@ -1,9 +1,5 @@
 trigger:
 - main
-
-variables:
-  variables:
-    - group: keyvault-varialbes-group
     
 pool:
   vmImage: ubuntu-latest
