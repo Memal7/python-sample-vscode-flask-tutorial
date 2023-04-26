@@ -9,12 +9,8 @@ resources:
 - repo: self
 
 variables:
-  # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '8b45c8b4-b24b-4bda-9d82-f8aa8bb9c3eb'
-  imageRepository: 'memalpythonsamplevscodeflasktutorial'
-  containerRegistry: 'acrmsdemo.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.BuildId)'
+  variables:
+    - group: my-variable-group
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
